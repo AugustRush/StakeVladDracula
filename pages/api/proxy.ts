@@ -16,8 +16,7 @@ export default async function handler(req: NextRequest) {
   } else if (url.pathname.startsWith('/v1/messages') || url.pathname.startsWith('/v1/complete')) {
     url.host = 'api.anthropic.com';
   } else {
-    url.host = 'august-chat35.vercel.app';
-    //'augustgpt35.onrender.com';
+    url.host = 'augustgpt35.onrender.com';
     //'api.openai.com';
   }
   
