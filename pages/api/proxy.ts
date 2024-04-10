@@ -7,7 +7,7 @@ export const config = {
 export default async function handler(req: NextRequest) {
   const url = new URL(req.url);
 
-  if (url.pathname.startsWith('/v1beta')) {
+  if (url.pathname.startsWith('/v1beta') || url.pathname.startsWith('/v1')) {
     url.host = 'generativelanguage.googleapis.com';
   } else if (url.pathname.startsWith('/headers')) {
     url.host = 'httpbin.org';
