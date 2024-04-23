@@ -16,7 +16,7 @@ export default async function handler(req: NextRequest) {
   } else if (url.pathname.startsWith('/v1/messages') || url.pathname.startsWith('/v1/complete')) {
     url.host = 'api.anthropic.com';
   } else {
-    url.host = 'augustgpt35-fnv2.onrender.com';
+    url.host = 'agpt35.onrender.com';
     //'api.openai.com';
   }
   
